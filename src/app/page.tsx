@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './page.module.css'
 import Link from 'next/link';
+import { Metadata } from 'next';
 
 // import components
 import Image from 'next/image'
@@ -8,6 +9,12 @@ import Input from '@/components/forms/Input';
 import Button from '@/components/forms/Button';
 import Checkbox from '@/components/forms/Checkbox'
 import BtnGoogle from '@/components/forms/BtnGoogle'
+
+//Add title ro page
+export const metadata: Metadata = {
+  title: "Login | Spleen AFX",
+  description: "Musicas online",
+};
 
 export default function Login() {
 
@@ -50,7 +57,7 @@ export default function Login() {
                   <label htmlFor="logado"> Mantenha Logado</label>   
                   </span>
 
-                  <Link href="/" className='ml-4 text-color_yellow font-medium'> Forgot Password</Link> 
+                  <Link href="/forgot" className='ml-4 text-color_yellow font-medium'> Forgot Password</Link> 
               </div>  
 
               <div className='flex justify-between items-center text-sm gap-2 cursor-pointer'>

@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from '../page.module.css'
+import {Metadata} from 'next'
 
 // import components
 import Image from 'next/image'
@@ -7,6 +8,12 @@ import Input from '@/components/forms/Input';
 import Button from '@/components/forms/Button';
 import Checkbox from '@/components/forms/Checkbox'
 import Link from 'next/link';
+
+//Add title ro page
+export const metadata: Metadata = {
+  title: "Forgot | Spleen AFX",
+  description: "Musicas online",
+};
 
 export default function Login() {
 
