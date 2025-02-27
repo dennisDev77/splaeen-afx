@@ -1,15 +1,16 @@
 import React from 'react'
+import { ReactNode } from 'react';
 
-// import icons
-import { FcGoogle } from "react-icons/fc";
+interface Props{
+   children:ReactNode,
+   onClick?:()=>void //Permite receber onClick
+}
 
-const BtnGoogle = () => {
+const BtnGoogle = ({children, onClick}:Props) => {
   return (
-    <button className='flex justify-center items-center gap-2'>
-    <span className='text-4xl flex justify-center items-cente'>
-        <FcGoogle/>
-    </span>
-    <span className='text-base font-medium'>Logar com Google</span>
+
+    <button className='flex justify-center items-center gap-2' onClick={onClick}>
+      {children}
     </button>
   )
 }
