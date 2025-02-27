@@ -1,0 +1,12 @@
+{
+    "files.exclude":{
+        ".next":true,
+        "node_modules":true,
+        "next-env.d.ts":true,
+        "eslint.config.mjs":true,
+        "next.config.ts":true,
+        "postcss.config.mjs":true,
+        "tsconfig.json":true,
+        "package.json":true
+    }
+}

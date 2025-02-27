@@ -1,0 +1,8 @@
+.input{
+    box-shadow: 0 0 0 1px #f9fafb;
+    font-size: 1rem;
+
+    & placeholder{
+        color:#edf0f3;
+    }
+}
