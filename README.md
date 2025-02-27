@@ -14,7 +14,7 @@ personalizadas, pesquisar músicas e até fazer o upload das suas próprias faix
 
 <!--- # "Verify icons availability here https://github.com/tandpfun/skill-icons" -->
 
-[![My Skills](https://skillicons.dev/icons?i=ts,nextjs,next-authjs,react,tailwind)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=ts,nextjs,react,tailwind)](https://skillicons.dev)
 
 ### Ajustes e melhorias
 
