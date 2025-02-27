@@ -1,10 +1,16 @@
-import React from 'react'
 import styles from './forms.module.css'
 
-const Input = ({...props}) => {
+interface propId{
+  id:string,
+  placeholder:string,
+  type:string
+}
+
+const Input = ({id, placeholder,type }:propId) => {
   return (
     <>
-        <input {...props} className={`${styles.input} py-2 px-2 bg-transparent rounded-md`}/>
+        <input id={id} placeholder={placeholder} type={type}
+        className={`${styles.input} py-2 px-4 bg-transparent rounded-md`}/>
     </>
   )
 }

@@ -1,8 +1,12 @@
 import React from 'react'
 
-const Checkbox = () => {
+interface check{
+  type:string,
+  id:string
+}
+const Checkbox = ({type, id}:check) => {
   return (
-    <input type="checkbox" 
+    <input type={type} id={id} 
     className='w-5 h-5 accent-color_yellow' 
     />
   )
