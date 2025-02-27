@@ -20,7 +20,7 @@ body{
   background-image: linear-gradient(to left bottom, #4831a2, #0d0727, #201253);
   font-family: var(--font-montserrat);
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 
 /* Reset css */
