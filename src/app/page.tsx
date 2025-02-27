@@ -1,7 +1,10 @@
+"use client" //transform the component to client component
+
 import React from 'react'
 import styles from './page.module.css'
 import Link from 'next/link';
-import { Metadata } from 'next';
+import { signIn, useSession} from 'next-auth/react';
+import { redirect } from 'next/navigation';
 
 // import components
 import Image from 'next/image'
@@ -10,13 +13,21 @@ import Button from '@/components/forms/Button';
 import Checkbox from '@/components/forms/Checkbox'
 import BtnGoogle from '@/components/forms/BtnGoogle'
 
-//Add title ro page
-export const metadata: Metadata = {
-  title: "Login | Spleen AFX",
-  description: "Musicas online",
-};
+// import icons
+import { FcGoogle } from "react-icons/fc";
+
 
 export default function Login() {
+ 
+  // logged in user data
+    const {data:session} = useSession()
+
+     React.useEffect(()=>{
+       if(session){
+         redirect('/dashboard')
+       }
+       console.log(session)
+     }, [session])
 
   return (
     <main className=" container pt-10">
@@ -70,7 +81,13 @@ export default function Login() {
               </div>  
 
               <Button>Iniciar Seccao</Button>
-              <BtnGoogle/>
+
+              <BtnGoogle onClick={()=>signIn('google')}>
+              <span className='text-4xl flex justify-center items-cente'>
+              <FcGoogle/>
+             </span>
+              <span className='text-base font-medium'>Logar com Google</span>
+              </BtnGoogle>
           </form>
          </section>
         

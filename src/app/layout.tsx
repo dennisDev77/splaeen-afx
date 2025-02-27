@@ -1,10 +1,8 @@
-import type { Metadata } from "next";
-import "./globals.css";
+"use client"  //transform the component to client component
 
-export const metadata: Metadata = {
-  title: "Spleen AFX",
-  description: "Musicas online",
-};
+import "./globals.css";
+//get session 
+import { SessionProvider } from 'next-auth/react';
 
 export default function RootLayout({
   children,
@@ -14,7 +12,11 @@ export default function RootLayout({
   return (
     <html lang="pt-pt">
       <body>
-        {children}
+
+        <SessionProvider>
+         {children}
+        </SessionProvider>
+
       </body>
     </html>
   );
