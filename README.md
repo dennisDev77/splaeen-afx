@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<!--- # "Can be a image or a gift from the project pages" -->
 
-## Getting Started
+<p align="center">
+  <img src="../.github/example.png" alt="pagina home">
+</p>
 
-First, run the development server:
+# Spleen AFX
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+> O Spleen AFX é um sistema web desenvolvido para proporcionar uma experiência completa de
+música online. Neste sistema, os utilizadores podem ouvir músicas, criar playlists
+personalizadas, pesquisar músicas e até fazer o upload das suas próprias faixas
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<!--- # "Verify icons availability here https://github.com/tandpfun/skill-icons" -->
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+[![My Skills](https://skillicons.dev/icons?i=ts,nextjs,next-auth,react,tailwind)](https://skillicons.dev)
 
-## Learn More
+### Ajustes e melhorias
 
-To learn more about Next.js, take a look at the following resources:
+O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas para as seguintes tarefas:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- []  Criação de playlists
+- []  Pesquisa
+- []  Upload de músicas(Opcional)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 💻 Contribute
+1. **Clone project**: `git clone https://github.com/Fernanda-Kipper/Readme-Templates.git`
+2. **Create feature/branch**: `git checkout -b feature/NAME`
+3. **Install Dependencies**: `npm install or yarn`
 
-## Deploy on Vercel
+## 📝 Licença
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
