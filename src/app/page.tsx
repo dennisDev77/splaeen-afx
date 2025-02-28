@@ -12,6 +12,8 @@ import Input from '@/components/forms/Input';
 import Button from '@/components/forms/Button';
 import Checkbox from '@/components/forms/Checkbox'
 import BtnGoogle from '@/components/forms/BtnGoogle'
+import Logo from '@/components/logo/Logo'
+
 
 // import icons
 import { FcGoogle } from "react-icons/fc";
@@ -36,13 +38,7 @@ export default function Login() {
        <section className='flex justify-center items-center flex-wrap gap-10 w-full'>
 
          <section className='headTitle flex flex-col gap-8 md:w-2/5'>
-
-          {/* section Logo */}
-          <section className='flex justify-start items-center gap-2'>
-            <Image src="/images/logo.png" alt="Carregando a logo S" className={styles.imgLogo} width={100} height={100}/>
-            <h2 className='font-semibold'>Spleen AFX</h2>
-          </section>
-
+          <Logo/>
           {/* Add title */}
           <section className=''>
             <h3 className='font-medium text-4xl'>Ola, Seja bem-vndo</h3>
@@ -82,11 +78,13 @@ export default function Login() {
 
               <Button>Iniciar Seccao</Button>
 
+              <Link href='/sign_up' className='text-sm text-gray-200 text-center'>Cria Conta</Link>
+
               <BtnGoogle onClick={()=>signIn('google')}>
-              <span className='text-4xl flex justify-center items-cente'>
-              <FcGoogle/>
-             </span>
-              <span className='text-base font-medium'>Logar com Google</span>
+                <span className='text-4xl flex justify-center items-cente'>
+                <FcGoogle/>
+               </span>
+                <span className='text-base font-medium'>Logar com Google</span>
               </BtnGoogle>
           </form>
          </section>
