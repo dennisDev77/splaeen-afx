@@ -25,7 +25,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - []  Upload de músicas(Opcional)
 
 ## 💻 Contribute
-1. **Clone project**: `git clone https://github.com/Fernanda-Kipper/Readme-Templates.git`
+1. **Clone project**: `git clone git@github.com:dennisDev77/splaeen-afx.git`
 2. **Create feature/branch**: `git checkout -b feature/NAME`
 3. **Install Dependencies**: `npm install or yarn`
 
