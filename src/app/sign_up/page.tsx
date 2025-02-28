@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description: "Musicas online",
 };
 
-export default function Login() {
+export default function SignUp() {
 
   return (
     <main className=" container pt-10">
