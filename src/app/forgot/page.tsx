@@ -6,6 +6,7 @@ import {Metadata} from 'next'
 import Image from 'next/image'
 import Input from '@/components/forms/Input';
 import Button from '@/components/forms/Button';
+import Logo from '@/components/logo/Logo';
 import Link from 'next/link';
 
 //Add title ro page
@@ -26,8 +27,7 @@ export default function Forgot() {
 
           {/* section Logo */}
           <section className='flex justify-start items-center gap-2'>
-            <Image src="/images/logo.png" alt="Carregando a logo S" className={styles.imgLogo} width={100} height={100}/>
-            <h2 className='font-semibold'>Spleen AFX</h2>
+            <Logo/>
           </section>
 
           {/* Add title */}
