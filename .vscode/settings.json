@@ -1,4 +1,4 @@
-{
+{ //Todos arquivos que estiverem ca serao ocultado do bundle
     "files.exclude":{
         ".next":true,
         "node_modules":true,
@@ -7,6 +7,7 @@
         "next.config.ts":true,
         "postcss.config.mjs":true,
         "tsconfig.json":true,
-        "package.json":true
+        "package.json":true,
+        ".env.local":true,
     }
 }
